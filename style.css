@@ -126,6 +126,14 @@ li a{
         background-image: url(./image\ -\ Copy\ \(5\).png);
     }
 }
+@media(max-width: 360px){
+    .logo{
+        margin-left: 0px;
+    }
+    body{
+        background-image: url(./image\ -\ Copy\ \(6\).png);
+    }
+}
 
 @media(max-width:320px){
     body{
