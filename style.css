@@ -72,7 +72,7 @@ li a{
     color: white;
     font-size: 19px;
 }
-@media(max-width:900px){
+@media screen and (max-width:900px){
     .nav-bar ul{
         display: none;
     }
@@ -89,12 +89,12 @@ li a{
     }
 
 }
-@media(max-width: 884px){
+@media screen and (max-width: 884px){
     .logo{
         margin-left: 10px;
     }
 }
-@media(max-width: 660px){
+@media screen and (max-width: 660px){
     .logo{
         margin-left: 3px;
     }
@@ -102,7 +102,7 @@ li a{
         background-image: url(./image\ -\ Copy\ \(2\).png);
     }
 }
-@media(max-width: 561px){
+@media screen and (max-width: 561px){
     .logo{
         margin-left: 3px;
     }
@@ -110,7 +110,7 @@ li a{
         background-image: url(./image\ -\ Copy\ \(3\).png);
     }
 }
-@media(max-width: 470px){
+@media screen and (max-width: 470px){
     .logo{
         margin-left: 1px;
     }
@@ -118,7 +118,7 @@ li a{
         background-image: url(./image\ -\ Copy\ \(4\).png);
     }
 }
-@media(max-width: 405px){
+@media screen and (max-width: 405px){
     .logo{
         margin-left: 0px;
     }
@@ -126,16 +126,16 @@ li a{
         background-image: url(./image\ -\ Copy\ \(5\).png);
     }
 }
-@media(max-width: 360px){
+@media screen and (max-width: 360px){
     .logo{
         margin-left: 0px;
     }
     body{
         background-image: url(./image\ -\ Copy\ \(6\).png);
+        width: 50%;
     }
 }
-
-@media(max-width:320px){
+@media screen and (max-width:320px){
     body{
         background-image: url(./image\ -\ Copy.png);
         height: 80vh;
