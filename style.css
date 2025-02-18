@@ -84,7 +84,7 @@ li a{
         margin-left: 0 px 0px px 300px;
     }
     body{
-        background-image: url(./image.png) image url(./image.png,);
+        background-image: url(./image.png);
     
     }
 
@@ -118,21 +118,21 @@ li a{
         background-image: url(./image\ -\ Copy\ \(4\).png);
     }
 }
-@media screen and (max-width: 405px){
+@media screen and (max-width: 405px ){
     .logo{
         margin-left: 0px;
     }
     body{
         background-image: url(./image\ -\ Copy\ \(5\).png);
+    
     }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 390px){
     .logo{
         margin-left: 0px;
     }
     body{
-        background-image: url(./image\ -\ Copy\ \(6\).png);
-        width: 50%;
+        background-image: url(./image\ -\ Copy\ \(7\).png);
     }
 }
 @media screen and (max-width:320px){
