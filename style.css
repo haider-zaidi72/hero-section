@@ -6,6 +6,10 @@
 body{
     font-family: poppins, sans-serif;
     background-image: url(./image.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    /* background-position: center;  */
 
 }
 .top-bar{
@@ -61,7 +65,7 @@ li a{
     display: none;
 }
 .logo{
-    margin-left: 60px;
+    margin-left: 30px;
 }
 .cont{
     margin-right: 60px;
@@ -85,7 +89,50 @@ li a{
     }
 
 }
+@media(max-width: 884px){
+    .logo{
+        margin-left: 10px;
+    }
+}
+@media(max-width: 660px){
+    .logo{
+        margin-left: 3px;
+    }
+    body{
+        background-image: url(./image\ -\ Copy\ \(2\).png);
+    }
+}
+@media(max-width: 561px){
+    .logo{
+        margin-left: 3px;
+    }
+    body{
+        background-image: url(./image\ -\ Copy\ \(3\).png);
+    }
+}
+@media(max-width: 470px){
+    .logo{
+        margin-left: 1px;
+    }
+    body{
+        background-image: url(./image\ -\ Copy\ \(4\).png);
+    }
+}
+@media(max-width: 405px){
+    .logo{
+        margin-left: 0px;
+    }
+    body{
+        background-image: url(./image\ -\ Copy\ \(5\).png);
+    }
+}
 
+@media(max-width:320px){
+    body{
+        background-image: url(./image\ -\ Copy.png);
+        height: 80vh;
+    }
+}
 
 
 
