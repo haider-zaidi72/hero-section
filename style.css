@@ -5,12 +5,19 @@
 }
 body{
     font-family: poppins, sans-serif;
-    background-image: url(./image.png);
+    /* background-image: url(./image.png);
     background-size: cover;
     background-repeat:no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     /* background-position: center;  */
-
+  
+}
+header{
+    background-color: lightgray;
+}
+img{
+    width: 100%;
+    height: auto
 }
 .top-bar{
     display: flex;
@@ -83,10 +90,10 @@ li a{
     .cont{
         margin-left: 0 px 0px px 300px;
     }
-    body{
+    /* body{
         background-image: url(./image.png);
     
-    }
+    } */
 
 }
 @media screen and (max-width: 884px){
@@ -98,49 +105,44 @@ li a{
     .logo{
         margin-left: 3px;
     }
-    body{
+    /* body{
         background-image: url(./image\ -\ Copy\ \(2\).png);
-    }
+    } */
 }
 @media screen and (max-width: 561px){
     .logo{
         margin-left: 3px;
     }
-    body{
+    /* body{
         background-image: url(./image\ -\ Copy\ \(3\).png);
-    }
+    } */
 }
 @media screen and (max-width: 470px){
     .logo{
         margin-left: 1px;
     }
-    body{
+    /* body{
         background-image: url(./image\ -\ Copy\ \(4\).png);
-    }
+    } */
 }
 @media screen and (max-width: 405px ){
     .logo{
         margin-left: 0px;
     }
-    body{
+    /* body{
         background-image: url(./image\ -\ Copy\ \(5\).png);
     
-    }
+    } */
 }
 @media screen and (max-width: 390px){
     .logo{
         margin-left: 0px;
     }
-    body{
+    /* body{
         background-image: url(./image\ -\ Copy\ \(7\).png);
-    }
+    } */
 }
-@media screen and (max-width:320px){
-    body{
-        background-image: url(./image\ -\ Copy.png);
-        height: 80vh;
-    }
-}
+
 
 
 
