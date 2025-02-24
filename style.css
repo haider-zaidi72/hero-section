@@ -23,10 +23,30 @@ img{
     display: flex;
     justify-content: right;
     height: 20px;
-    padding: 10px 100px 0 0; 
-    
+    padding: 10px 100px 0 0;    
+}
+ul li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0;
+}
+ul li a:before{
+    position:absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s linear;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
 
-    
 }
 
 .top-bar a{
