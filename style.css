@@ -123,12 +123,16 @@ body{
 
 .main-btn{
     display: flex;
-    margin-top: 326px;
+    margin-top: 500px;
     margin-left: 80px;
 }
 header{
     background-image: url(./image.png);
     height: 100vh;
+    background-size: cover;
+    background-position: left; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   
 }
 /* Responsive adjustments */
@@ -179,6 +183,14 @@ header{
 
     .btn {
         margin-left: 0;
+    }
+}
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    header {
+        background-size: contain; /* Ensures the whole image is visible */
+        background-position: top;
+        background-attachment: scroll; /* Allows the image to scroll on small screens */
     }
 }
 
