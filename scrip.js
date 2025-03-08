@@ -1,15 +1,6 @@
+const toggleButton = document.querySelector('.toggle');
+const menu = document.querySelector('.menu');
 
-
-alert('Welcome to Dmitrii Rogoza');
-
-alert("Welcome to JS Land.\nAnd happy coding.");
-
-let password = prompt("Enter your password:");
-
-if (password !== "correctPassword") {
-    alert("Wrong password! Please try again.");
-} else {
-    alert("Access granted!");
-}
-alert("happy coding.\nAnd Prevent this page from creating additional dialongs");
-alert("Hello! I can run JS through console in my webpage");
+toggleButton.addEventListener('click', () => {
+    menu.classList.toggle('active'); // Toggles the 'active' class to show/hide the menu
+});

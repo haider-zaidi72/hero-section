@@ -1,16 +1,17 @@
-*{      
-        font-family: "Roboto", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style:normal;
-      }
+* {      
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.topbar{
+
+.topbar {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -18,32 +19,38 @@ body{
     margin-bottom: 0px;
     height: 40px;
     font-size: 24px;
-    margin-right: 16px;
+    margin-right: 40px;
 }
-.topbar i{
+
+.topbar i {
     padding: 10px;
 }
-.topbar li{
+
+.topbar li {
     list-style: none;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
-    padding: 0 20px;
-    /* background-color: #333; */
+    height: 80px;  /* Set a fixed height */
+    padding: 0 20px;  /* Add padding to adjust content position */
+    background-color: #333;  /* Ensure background color is set */
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
     margin-left: 50px;
     flex-grow: 1; /* Ensure the menu items take up available space */
     justify-content: center;
 }
-.navbar li{
+
+.navbar li {
     list-style: none;  
 }
-.navbar li a{
+
+.navbar li a {
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: 3px;
@@ -52,11 +59,13 @@ body{
     color: white; 
     font-size: 18px;
 }
-.menu a:hover:before{
+
+.menu a:hover:before {
     transform: scaleX(1);
-    transform-origin: left
+    transform-origin: left;
 }
-.menu a:before{
+
+.menu a:before {
     content: "";
     background: white;
     width: 100%;
@@ -68,27 +77,30 @@ body{
     transform-origin: right;
     transition: transform 0.3s linear; 
 }
-.menu li a{
+
+.menu li a {
     position: relative;
     color: white;
     font-size: 20px;
 }
 
-.logo{
-    margin-left: 70px;
+.logo {
+    margin-left: 20px;
     animation: forwards;  
     position: fixed;
 }
-.logo :hover{
+
+.logo :hover {
     width: 130px;
-   
 }
-.toggle{
+
+.toggle {
+    display: none;  /* Initially hide toggle button */
     color: white;   
     font-size: 24px;
-    display: none;
 }
-.btn{
+
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +112,8 @@ body{
     color: white;
     cursor: pointer;
 }
-.button{
+
+.button {
     height: 91px;
     width: 275px;
     border-radius: 10px;
@@ -108,29 +121,20 @@ body{
     font-weight: 500;
     border-color: #c1c2bf;
     cursor: pointer;
-
-    background: hsla(344, 63%, 47%, 1);
-
     background: linear-gradient(180deg, hsla(344, 63%, 47%, 1) 13%, hsla(203, 89%, 71%, 1) 100%, hsla(0, 0%, 96%, 1) 100%);
-    
-    background: -moz-linear-gradient(180deg, hsla(344, 63%, 47%, 1) 13%, hsla(203, 89%, 71%, 1) 100%, hsla(0, 0%, 96%, 1) 100%);
-    
-    background: -webkit-linear-gradient(180deg, hsla(344, 63%, 47%, 1) 13%, hsla(203, 89%, 71%, 1) 100%, hsla(0, 0%, 96%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C42D55", endColorstr="#71C3F7", GradientType=1 );
-    
 }
 
-.main-btn{
+.main-btn {
     display: flex;
     margin-top: 326px;
     margin-left: 80px;
 }
-header{
+
+header {
     background-image: url(./image.png);
     height: 100vh;
-  
 }
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .navbar {
@@ -183,22 +187,23 @@ header{
 }
 
 
+java script
+const toggleButton = document.querySelector('.toggle');
+const menu = document.querySelector('.menu');
+
+toggleButton.addEventListener('click', () => {
+    menu.classList.toggle('active'); // Toggles the 'active' class to show/hide the menu
+});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Explanation of Changes:
+Navbar Height: Set a fixed height of 80px for the navbar, which will prevent any height issues.
+Flexbox Layout: I used flex-direction: column for the navbar items when the screen width is below 768px (common for tablets and smaller devices).
+Menu Alignment: The menu items will stack vertically on smaller screens, and the toggle button will appear.
+Logo: On smaller screens, the logo width is reduced to avoid overflowing.
+Toggle Button: On mobile screens, the toggle button will appear, and when clicked, it will show or hide the menu.
+CSS Transitions: The menu will have a smooth transition when it toggles.
+This should make your navbar responsive, with a working toggle for mobile views and no layout shifts or height issues. Let me know if you need further adjustments!
 
 
 
